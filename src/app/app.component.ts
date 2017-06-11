@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
 
 @Component({
+  moduleId: module.id,
   selector: 'pwa-root',
   template: `
-    <md-toolbar color="primary" class="dark">
-    </md-toolbar>
     <router-outlet></router-outlet>
   `,
   styles: []
