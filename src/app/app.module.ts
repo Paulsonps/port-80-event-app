@@ -9,6 +9,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeModule } from './home/home.module';
 import { PageNotFoundComponent } from './page-not-found.component';
+import { CovalentChipsModule } from '@covalent/core';
+import {CovalentMenuModule} from '@covalent/core';
+import {CovalentNotificationsModule} from '@covalent/core';
+import {CovalentLayoutModule} from '@covalent/core';
+import {CovalentMediaModule} from '@covalent/core';
 
 @NgModule({
   declarations: [
@@ -24,8 +29,13 @@ import { PageNotFoundComponent } from './page-not-found.component';
     MdButtonModule,
     MdInputModule,
     MdToolbarModule,
-    AppRoutingModule
-  ],
+    AppRoutingModule,
+    CovalentChipsModule,
+    CovalentLayoutModule,
+    CovalentMediaModule,
+    CovalentMenuModule,
+    CovalentNotificationsModule
+],
   providers: [],
   bootstrap: [AppComponent]
 })
